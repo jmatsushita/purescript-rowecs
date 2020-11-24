@@ -14,7 +14,7 @@ import Prelude (class Show, Unit, unit, show, ($), (<>))
 import Prim.Row as Row
 import Type.Prelude (class IsSymbol, class RowToList, RLProxy(RLProxy), RProxy(RProxy), SProxy(SProxy), reflectSymbol)
 import Type.Proxy (Proxy2(Proxy2))
-import Type.Row (Cons, Nil, kind RowList)
+import Type.RowList (Cons, Nil, kind RowList)
 
 class Storage (c :: Type -> Type) a where
   allocate :: c a
